@@ -96,13 +96,13 @@ body {
     text-transform: uppercase;
     width: 100%;
     border: none;
-    padding: 12px; 
+    padding: 12px;
     cursor: pointer;
     opacity: 0.8;
 
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 1;
 }
 
@@ -115,14 +115,14 @@ body {
 }
 
 .beneficios {
-    display: flex;  
+    display: flex;
     justify-content: space-around;
     padding: 4em;
     width: 80%;
     margin: 0 auto;
 }
 
-.beneficio{
+.beneficio {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -144,9 +144,55 @@ body {
 #beneficio-1 {
     background-image: url(../src/img/cao-e-gato-filhote-1.jpg);
 }
+
 #beneficio-2 {
     background-image: url(../src/img/cao-e-gato-adulto-2.jpg);
 }
+
 #beneficio-3 {
     background-image: url(../src/img/cao-e-gato-senior-3.jpg);
+}
+
+/* Local do Evento */
+#localizacao {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("../src/img/cat-dog-home-page.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+#endereco,
+#sobre-localizacao {
+    max-width: 30%;
+}
+
+#endereco {
+    display: flex;
+}
+#endereco i {
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+#detalhes-do-evento {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#sobre-localizacao h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#sobre-localizacao p {
+    line-height: 1.5em;
 }
