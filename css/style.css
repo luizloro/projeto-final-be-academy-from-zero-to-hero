@@ -13,14 +13,10 @@
     box-sizing: border-box;
 }
 
-body {
-    padding-bottom: 500px;
-}
-
 /*Formulario de evento*/
 #descricao-do-evento {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url("../src/img/cao-e-gato-4.jpg");
+        url("../src/img/cao-gato-home1.jpg");
     background-position: center;
     background-size: cover;
     height: 85vh;
@@ -195,4 +191,102 @@ body {
 
 #sobre-localizacao p {
     line-height: 1.5em;
+}
+
+/* Detalhes do Evento Conteúdo */
+#detalhes {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.detalhe {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em ;
+}
+
+.detalhe img {
+    width: 50%;
+}
+.detalhe h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#detalhe-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.descricao-detalhes {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.descricao-detalhes ul {
+    list-style-position: inside;
+}
+
+.descricao-detalhes ul li {
+    margin-bottom: 0.4em;
+}
+
+.descricao-detalhes ul li:last-child {
+    font-weight: bold;
+}
+
+/* Botão se increva */
+
+#cta {
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("../src/img/gato-olhando.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+#cta h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#cta .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    color: var(--secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#footer span {
+    font-weight: bold;
 }
