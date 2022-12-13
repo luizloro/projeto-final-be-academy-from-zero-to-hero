@@ -267,6 +267,11 @@
 
 }
 
+#cta .btn a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 /* Footer */
 #footer {
     text-align: center;
@@ -282,9 +287,11 @@
     margin-bottom: 0.5em;
 }
 
-#footer p:nth-child(2) {
+#footer a:nth-child(2) {
     margin-bottom: 1em;
     font-size: 1.2em;
+    text-decoration: none;
+    color: var(--secondary);
 }
 
 #footer span {
