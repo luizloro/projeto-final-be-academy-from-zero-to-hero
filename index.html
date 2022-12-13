@@ -18,6 +18,9 @@
         rel="stylesheet">
     <!-- Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Script-->
+    <script src="./index.js"></script>
+
 </head>
 
 <body>
@@ -45,7 +48,8 @@
                 </div>
                 <div class="grupo-form">
                     <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" placeholder="Número de Whatsapp">
+                    <input type="tel" name="telefone" placeholder="Número de Whatsapp" onkeyup="handlePhone(event)"
+                        maxlength="15">
                 </div>
                 <div class="grupo-form">
                     <label for="interesse">Principal interesse</label>
