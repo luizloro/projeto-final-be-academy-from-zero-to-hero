@@ -1,0 +1,34 @@
+/* Mobile */
+@media (max-width: 450px) {
+
+    /* Formulário de Eventos */
+    #descricao-do-evento {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #descricao-do-evento {
+        padding: 2em;
+    }
+
+    #descricao-do-evento {
+        margin-bottom: .5em;
+    }
+
+    #formulario-de-incricao {
+        max-width: 70%;
+    }
+
+    #aviso-do-evento {
+        padding: 2em;
+    }
+
+    #aviso-do-evento h2  {
+        margin-bottom: .5em;
+    }
+
+    #formulario-de-incricao {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+}
