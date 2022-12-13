@@ -272,6 +272,14 @@
     text-decoration: none;
 }
 
+#cta form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 /* Footer */
 #footer {
     text-align: center;
