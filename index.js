@@ -16,8 +16,8 @@ const phoneMask = (value) => {
 
 /* Timer do Header*/
 const timeLeft = document.querySelector('#timer')
-const nextYear = new Date().getFullYear() + 1
-const newYearTimer = new Date(`January 01 ${nextYear} 00:00:00`)
+const nextYear = new Date().getFullYear() 
+const newYearTimer = new Date(`December 15 ${nextYear} 00:00:00`)
 
 const updateCoutDown = () => {
     const currentTime = new Date()
@@ -27,9 +27,9 @@ const updateCoutDown = () => {
     const minutes = Math.floor(difference / 1000 /60) % 60
     const seconds = Math.floor(difference / 1000) % 60
 
-    timeLeft.textContent = seconds < 10 ? '0' + seconds : seconds
+    //timeLeft.textContent = seconds < 10 ? '0' + seconds : seconds
 
-    timeLeft.textContent = `Expira em: ${days} Dias ${hours} Horas : ${minutes} : Minutos : ${seconds} Segundos`
+    timeLeft.textContent = `Expira em: ${days< 10 ? '0' + days : days} dia ${hours < 10 ? '0' + hours : hours}h  ${minutes < 10 ? '0' + minutes : minutes}m  ${seconds < 10 ? '0' + seconds : seconds}s `
 
 
 }
