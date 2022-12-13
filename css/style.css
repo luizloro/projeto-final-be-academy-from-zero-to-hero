@@ -171,6 +171,7 @@
 #endereco {
     display: flex;
 }
+
 #endereco i {
     color: var(--primary);
     font-size: 4em;
@@ -204,12 +205,13 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 5%;
-    margin-bottom: 4em ;
+    margin-bottom: 4em;
 }
 
 .detalhe img {
     width: 50%;
 }
+
 .detalhe h3 {
     margin-bottom: 1em;
     font-size: 2em;
