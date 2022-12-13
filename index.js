@@ -29,7 +29,7 @@ const updateCoutDown = () => {
 
     //timeLeft.textContent = seconds < 10 ? '0' + seconds : seconds
 
-    timeLeft.textContent = `Expira em: ${days< 10 ? '0' + days : days} dia ${hours < 10 ? '0' + hours : hours}h  ${minutes < 10 ? '0' + minutes : minutes}m  ${seconds < 10 ? '0' + seconds : seconds}s `
+    timeLeft.textContent = `Expira em: ${days< 10 ? '0' + days : days} dia ${hours < 10 ? '0' + hours : hours} :  ${minutes < 10 ? '0' + minutes : minutes} :  ${seconds < 10 ? '0' + seconds : seconds}`
 
 
 }
