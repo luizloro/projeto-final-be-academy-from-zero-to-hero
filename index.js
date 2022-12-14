@@ -13,29 +13,33 @@ const phoneMask = (value) => {
 }
 
 /* Try Catch repósitorio img unsplash */
+try {
+
+} catch (error) {
+
+
+}
 
 /* Timer do Header*/
 const timeLeft = document.querySelector('#timer')
-const nextYear = new Date().getFullYear() 
-const newYearTimer = new Date(`December 15 ${nextYear} 00:00:00`)
+const nextYear = new Date().getFullYear()
+const newDayTimer = new Date(`December 15 ${nextYear} 21:00:00`)
 
 const updateCoutDown = () => {
     const currentTime = new Date()
-    const difference = newYearTimer - currentTime
-    const days = Math.floor(difference / 1000 / 60 /60 / 24)
-    const hours = Math.floor(difference / 1000 /60 /60) % 24
-    const minutes = Math.floor(difference / 1000 /60) % 60
+    const difference = newDayTimer - currentTime
+    const days = Math.floor(difference / 1000 / 60 / 60 / 24)
+    const hours = Math.floor(difference / 1000 / 60 / 60) % 24
+    const minutes = Math.floor(difference / 1000 / 60) % 60
     const seconds = Math.floor(difference / 1000) % 60
-    timeLeft.textContent = `Expira em: ${days< 10 ? '0' + days : days} dia ${hours < 10 ? '0' + hours : hours}h:  ${minutes < 10 ? '0' + minutes : minutes}m: ${seconds < 10 ? '0' + seconds : seconds}s`
-
-
+    timeLeft.textContent = `Expira em: ${days < 10 ? '0' + days : days} dia ${hours < 10 ? '0' + hours : hours}h:  ${minutes < 10 ? '0' + minutes : minutes}m: ${seconds < 10 ? '0' + seconds : seconds}s`
+    
 }
 
 setInterval(updateCoutDown, 1000)
 
 
 /* Cancelamento de reload da página */
-
-document.getElementById("btn").addEventListener("click", function(event){
+document.getElementById("btn").addEventListener("click", function (event) {
     event.preventDefault()
-  });
+});
