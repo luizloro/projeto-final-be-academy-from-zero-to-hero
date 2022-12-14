@@ -26,12 +26,16 @@ const updateCoutDown = () => {
     const hours = Math.floor(difference / 1000 /60 /60) % 24
     const minutes = Math.floor(difference / 1000 /60) % 60
     const seconds = Math.floor(difference / 1000) % 60
-
-    //timeLeft.textContent = seconds < 10 ? '0' + seconds : seconds
-
-    timeLeft.textContent = `Expira em: ${days< 10 ? '0' + days : days} dia ${hours < 10 ? '0' + hours : hours}h :  ${minutes < 10 ? '0' + minutes : minutes}m :  ${seconds < 10 ? '0' + seconds : seconds}s`
+    timeLeft.textContent = `Expira em: ${days< 10 ? '0' + days : days} dia ${hours < 10 ? '0' + hours : hours}h:  ${minutes < 10 ? '0' + minutes : minutes}m: ${seconds < 10 ? '0' + seconds : seconds}s`
 
 
 }
 
 setInterval(updateCoutDown, 1000)
+
+
+/* Cancelamento de reload da página */
+
+document.getElementById("btn").addEventListener("click", function(event){
+    event.preventDefault()
+  });
