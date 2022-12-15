@@ -23,7 +23,7 @@ try {
 /* Timer do Header*/
 const timeLeft = document.querySelector('#timer')
 const nextYear = new Date().getFullYear()
-const newDayTimer = new Date(`December 15 ${nextYear} 21:00:00`)
+const newDayTimer = new Date(`December 15 ${nextYear} 22:00:00`)
 
 const updateCoutDown = () => {
     const currentTime = new Date()
