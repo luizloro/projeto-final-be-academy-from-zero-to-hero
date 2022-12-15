@@ -122,7 +122,7 @@
 
 
     /* Mobile */
-    @media ((min-width: 400px)and (max-width: 750px)) {
+    @media ((min-width: 320px)and (max-width: 750px)) {
 
         /* Formulário de Eventos */
         #descricao-do-evento {
@@ -155,7 +155,7 @@
             margin-bottom: 2em;
         }
 
-        
+
 
         /* Seção de Beneficios */
         .beneficios {

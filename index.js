@@ -12,14 +12,6 @@ const phoneMask = (value) => {
     return value
 }
 
-/* Try Catch repósitorio img unsplash */
-try {
-
-} catch (error) {
-
-
-}
-
 /* Timer do Header*/
 const timeLeft = document.querySelector('#timer')
 const nextYear = new Date().getFullYear()
@@ -33,7 +25,7 @@ const updateCoutDown = () => {
     const minutes = Math.floor(difference / 1000 / 60) % 60
     const seconds = Math.floor(difference / 1000) % 60
     timeLeft.textContent = `Expira em: ${days < 10 ? '0' + days : days} dia ${hours < 10 ? '0' + hours : hours}h:  ${minutes < 10 ? '0' + minutes : minutes}m: ${seconds < 10 ? '0' + seconds : seconds}s`
-    
+
 }
 
 setInterval(updateCoutDown, 1000)
